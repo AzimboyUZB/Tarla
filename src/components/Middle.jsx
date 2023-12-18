@@ -1,5 +1,6 @@
 import React from 'react'
-import productsmin from '../data/productsMin'
+import productsmin from './../data/productsmin';
+
 
 function Middle() {
     return (
