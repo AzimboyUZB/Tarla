@@ -1,0 +1,183 @@
+.header__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFC3A0;
+    padding: 10px;
+
+    .container {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 768px){
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    .title {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 0;
+
+        &__name {
+            width: 370px;
+            font-size: 76px;
+            font-weight: 400;
+            line-height: 90px;
+        }
+
+        @media screen and (max-width: 1024px){
+            &__name {
+                width: auto;
+                font-size: 60px;
+                font-weight: 400;
+                line-height: 65px;
+            }  
+        }
+
+        &__text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        @media screen and (max-width: 1024px){
+            &__text {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
+        &__btn {
+            width: 300px;
+            height: 50px;
+            background-color: transparent;
+            font-size: 22px;
+            border-radius: 100px;
+            border: 1px solid;
+        }
+
+        @media screen and (max-width: 1024px){
+            &__btn {
+                width: 250px;
+                height: 50px;
+                background-color: transparent;
+                font-size: 22px;
+                border-radius: 100px;
+                border: 1px solid;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .title {
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            
+            &__name {
+                width: 100%;
+                font-size: 76px;
+                font-weight: 400;
+                line-height: 90px;
+            }
+
+            @media screen and (max-width: 425px){
+                &__name {
+                    font-size: 50px;
+                    font-weight: 400;
+                    line-height: 60px;
+                }
+            }
+    
+            &__text {
+                width: 100%;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+
+            @media screen and (max-width: 375px){
+                &__text {
+                    line-height: 23px;
+                }
+            }
+
+            &__btn {
+                width: 300px;
+                height: 50px;
+                background-color: transparent;
+                font-size: 22px;
+                border-radius: 100px;
+                border: 1px solid;
+            }
+
+            @media screen and (max-width: 375px){
+                &__btn {
+                    width: 250px;
+                    height: 40px;
+                    background-color: transparent;
+                    font-size: 22px;
+                    border-radius: 100px;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+
+    .swiper {
+        position: relative;
+        width: 60%;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    @media screen and (max-width: 1024px){
+        .swiper {
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .swiper {
+            width: 450px;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .swiper {
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    @media screen and (max-width: 375px){
+        .swiper {
+            height: 200px;
+        }
+    }
+
+    .swiper-button {
+        &-prev,
+        &-next {
+            position: absolute;
+            color: black;
+            bottom: 0px !important;
+        }
+    }
+
+    .photo {
+        width: 100%;
+        height: 100%;
+    }
+}

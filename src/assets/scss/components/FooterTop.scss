@@ -1,0 +1,54 @@
+.footer__top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+
+    .name {
+        font-size: 43px;
+        font-weight: 400;
+    }
+
+    @media screen and (max-width: 425px){
+        .name {
+            font-size: 35px;
+            font-weight: 400;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        overflow-x: scroll;
+
+        &__img {
+            width: 300px;
+            height: 300px;
+        }
+
+        @media screen and (max-width: 1024px){
+            &__img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            &__img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media screen and (max-width: 425px){
+            &__img {
+                width: 170px;
+                height: 170px;
+            }
+        }
+    }
+}

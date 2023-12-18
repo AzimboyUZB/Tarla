@@ -1,0 +1,208 @@
+.main__buttom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F5EDE7;
+    padding: 20px 0 20px 0;
+
+    .container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .container {
+            gap: 30px;
+        }
+    }
+
+    .top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        &__img {
+            height: 100%;
+        }
+
+        &__title {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title__name {
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .title__text {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+
+            .title__btn {
+                width: 256px;
+                height: 58px;
+                background-color: #F5EDE7;
+                border-radius: 50px;
+                border: 1px solid;
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            &__title {
+
+                .title__text {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                .title__btn {
+                    width: 200px;
+                    height: 50px;
+                    background-color: #F5EDE7;
+                    border-radius: 50px;
+                    border: 1px solid;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .top {
+            flex-direction: column;
+            text-align: center;
+
+            &__img {
+                width: 400px;
+            }
+
+            &__title {
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .top {
+            &__img {
+                width: 300px;
+            }
+
+            .title__text {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .buttom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        &__img {
+            height: 100%;
+        }
+
+        &__title {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title__name {
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .title__text {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 35px;
+            }
+
+            .title__btn {
+                width: 230px;
+                height: 45px;
+                background-color: #F5EDE7;
+                border-radius: 50px;
+                border: 1px solid;
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            &__title {
+                .title__text {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                .title__btn {
+                    width: 200px;
+                    height: 50px;
+                    background-color: #F5EDE7;
+                    border-radius: 50px;
+                    border: 1px solid;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .buttom {
+            flex-direction: column-reverse;
+            text-align: center;
+
+            &__img {
+                width: 400px;
+            }
+
+            &__title {
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .buttom {
+            &__img {
+                width: 300px;
+            }
+
+            .title__text {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}
